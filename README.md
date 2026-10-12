@@ -1,7 +1,8 @@
-# CSE3CWA Assessment 3 — Data-driven Phoneme Activity Builder
+<img width="1182" height="676" alt="image" src="https://github.com/user-attachments/assets/e97dd88c-2f6b-4cbe-b1ac-1b79d98b1807" /># CSE3CWA Assessment 3 — Data-driven Phoneme Activity Builder
 
 Student: **Keaton Ferber**  
 Student number: **21996943**
+GitHub repository: https://github.com/keatonferber/CSE3CWA-Assessment3
 
 This project extends the Assessment 2 Next.js Wordle/Word Search builder into the Assessment 3 data-driven reporting and observability stage. The existing normalised phoneme model, CRUD APIs, validation, `/health` route and standalone activity generation are retained.
 
