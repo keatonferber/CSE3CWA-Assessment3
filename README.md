@@ -145,6 +145,14 @@ See `LIGHTHOUSE_CHECKLIST.md`. Run Chrome Lighthouse against `/dashboard` and id
 | GET/POST | `/api/configs` | activity-configuration CRUD |
 | POST | `/api/generate` | generates standalone activity HTML and records success/failure |
 
+## Verified Assessment 3 results
+
+- Healthcheck: `/health` returns HTTP 200 with PostgreSQL connected.
+- Playwright: 2/2 end-to-end tests passed.
+- Lighthouse dashboard audit: 100 Accessibility, 96 Performance, 96 Best Practices and 100 SEO.
+- JMeter staged load testing completed at 1, 10, 100, 1,000 and 10,000 virtual users.
+- 10,000-user stage: 30,000 requests, 99.99% pass rate, 92.75 ms average response time and 0.01% client-side connection errors.
+
 ## Assessment 2 feedback addressed
 
 Assessment 2's strong database model, validation, genuine healthcheck and database-driven generation are retained. The main architecture criticism is addressed by moving persistence from SQLite packaged inside the application container to a dedicated PostgreSQL Docker service. Git history can be improved naturally while completing A3, but the implementation work remains the priority.
