@@ -1,0 +1,30 @@
+{
+  "name": "cse3cwa-speech-activity-builder",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "db:push": "prisma db push",
+    "db:seed": "prisma db seed",
+    "db:reset": "prisma db push --force-reset && prisma db seed",
+    "db:setup": "prisma generate && prisma db push && prisma db seed",
+    "test:e2e": "playwright test",
+    "test:e2e:headed": "playwright test --headed"
+  },
+  "dependencies": {
+    "@prisma/client": "6.15.0",
+    "install": "^0.13.0",
+    "next": "^15.5.24",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.1",
+    "prisma": "6.15.0"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.mjs"
+  }
+}

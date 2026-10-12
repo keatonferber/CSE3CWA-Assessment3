@@ -1,0 +1,32 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: cse3cwa
+      POSTGRES_PASSWORD: cse3cwa
+      POSTGRES_DB: phoneme_builder
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cse3cwa -d phoneme_builder"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: "postgresql://cse3cwa:cse3cwa@db:5432/phoneme_builder?schema=public"
+    depends_on:
+      db:
+        condition: service_healthy
+    command: >
+      sh -c "npx prisma db push && npm run db:seed && npm start"
+
+volumes:
+  postgres_data:
