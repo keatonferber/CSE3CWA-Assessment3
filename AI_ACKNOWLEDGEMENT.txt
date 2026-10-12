@@ -1,0 +1,9 @@
+AI ACKNOWLEDGEMENT — ADAPT TO THE OFFICIAL LA TROBE FORM
+
+Generative AI use is listed as Full AI for Assessment 3.
+
+Suggested acknowledgement wording:
+
+I used OpenAI ChatGPT to assist with planning, code generation, debugging, database and observability design, testing setup, documentation, and preparation for the Assessment 3 video demonstration. I reviewed and tested the generated work against the supplied assessment brief, rubric, subject materials and my previous Assessment 2 feedback. I remain responsible for the submitted work and for demonstrating and explaining how it functions.
+
+Complete the official AI acknowledgement on the Assessments page. This text file is only a draft/template and does not replace the university acknowledgement process.

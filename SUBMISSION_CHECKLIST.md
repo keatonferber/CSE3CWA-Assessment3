@@ -1,0 +1,23 @@
+# Assessment 3 final checklist
+
+- [ ] `docker compose up --build` completes.
+- [ ] Home and Dashboard load.
+- [ ] `/health` returns HTTP 200 and PostgreSQL connected.
+- [ ] Existing Word Lists CRUD works.
+- [ ] Existing Activity Settings CRUD works.
+- [ ] Wordle Preview and Generate HTML work.
+- [ ] Word Search Preview and Generate HTML work.
+- [ ] Dashboard updates after generating activities.
+- [ ] Failed-generation alert can be explained using simulated/live records.
+- [ ] `npx playwright install chromium` completed once.
+- [ ] `npm run test:e2e` passes and evidence saved.
+- [ ] JMeter stages 1/10/100/1000/10000 completed and reports saved.
+- [ ] JMeter behaviour under load can be explained from real results.
+- [ ] Lighthouse accessibility audit completed and real score saved.
+- [ ] Any easy Lighthouse issue found was fixed and rerun.
+- [ ] GitHub homepage and current commits ready to show.
+- [ ] Video is 3–8 minutes and shows student ID, face and voice.
+- [ ] Video shows dashboard, data, alerts, reporting, observability, Playwright, JMeter, Lighthouse and GitHub.
+- [ ] Official AI acknowledgement completed.
+- [ ] At least five APA-style sources retained.
+- [ ] `node_modules` and `.next` removed before final ZIP.
